@@ -259,16 +259,18 @@
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+            gap: 30px;
+            row-gap: 32px;
+            column-gap: 24px;
         }
         .skill-card {
             background-color: var(--card-bg);
             border: 1px solid var(--border-color);
             border-radius: 8px;
-            padding: 20px;
+            padding: 23px;
             box-shadow: var(--card-shadow);
             transition: border-color 0.3s;
-            height: 100%;
+            height: auto;
         }
         .skill-card:hover {
             border-color: var(--heading-color);
@@ -494,8 +496,10 @@
                     <div class="contact-item"><i class="fas fa-map-marker-alt"></i> Egypt, Alexandria</div>
                     <div class="contact-item">
                         <i class="fas fa-briefcase"></i>
-                        <a href="#" style="color: #e34f4f; text-decoration: none;">Free, Can Join immediately </a>
-                        <span class="status-badge">Available</span>
+                        <a href="https://www.linkedin.com/posts/hossam-yosri_newjob-itspecialist-careergrowth-activity-7429124345999888384-NchW" style="color: var(--text-color) ; font-weight: 600;"> IT Specialist at <strong> LC WAIKIKI </strong> </a>
+                        <!-- <span class="status-badge">Available</span> -->
+                        <!-- <div class="contact-item"><i class="fas fa-briefcase"></i><a href="https://www.linkedin.com/posts/hossam-yosri_newjob-itspecialist-careergrowth-activity-7429124345999888384-NchW" >  IT Specialist at LC WAIKIKI </a> </div> -->
+
                     </div>
                     <div class="contact-item"><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/hossam-yosri/" target="_blank" style="color: var(--text-color);">Hossam Yosri (LinkedIn)</a></div>
                     <div class="contact-item"><i class="fab fa-github"></i> <a href="https://github.com/hossamyosri" target="_blank" style="color: var(--text-color);">Hossam Yosri (GitHub)</a></div>
@@ -512,7 +516,7 @@
                             <i class="fab fa-whatsapp"></i>
                         </a>
                     </div>
-                         <img src="./img/me2.jpg" alt="Hossam's Photo" class="profile-img"> 
+                        <img src="./img/me2.jpg" alt="Hossam's Photo" class="profile-img"> 
                     
                     
 
@@ -521,12 +525,14 @@
                 <div class="profile-main-content">
                     <h2 class="job-title">IT Specialist</h2>
                     <p>
-                        <strong>Motivated and detail-oriented IT Specialist</strong> with over <strong>3 years</strong> of hands-on experience in technical support, system administration, and network operations across diverse environments. Skilled in <strong>Microsoft 365, Active Directory, DNS/DHCP, firewalls (Sophos, FortiGate), Windows Server administration, JIRA, and Cisco networking</strong> equipment. Proven ability to troubleshoot complex issues, implement IT solutions, and maintain secure, efficient systems.
+                        <strong>Motivated and detail-oriented IT Specialist</strong> with over <strong>3 years</strong> of hands-on experience in technical support, system administration, and network operations across diverse environments. Skilled in <strong>Microsoft 365, Active Directory, DNS/DHCP, Windows Server administration, firewalls (Sophos, FortiGate), JIRA, Cisco networking</strong>, with practical exposure to <strong>Linux systems, Docker containers, and cloud platforms (AWS, Azure)</strong>. Experienced in supporting <strong>SAP systems (user access, client support, basic troubleshooting)</strong>, and basic <strong>web development using PHP, Laravel</strong>, with <strong>version control using Git/GitHub</strong>. Proven ability to troubleshoot complex issues, implement IT solutions, and maintain secure, efficient systems.
                     </p>
                     <p>
-                        A quick learner with strong problem-solving skills, passionate about technology, and eager to take on new challenges. Open to <strong>relocation or international opportunities</strong>, with strong adaptability to different work cultures and environments. Fluent in <strong>Arabic</strong> and <strong>English</strong>, with excellent communication skills to collaborate effectively across teams. Seeking opportunities in Kuwait, Saudi Arabia, UAE, Egypt-Alexandria, Switzerland, Spain, Netherlands, Sweden, Germany, Ireland, and Poland.
+                        A quick learner with strong problem-solving skills, passionate about technology, and eager to take on new challenges. Open to <strong>relocation or international opportunities</strong>, with strong adaptability to different work cultures and environments. Fluent in <strong>Arabic</strong> and <strong>English</strong>, with excellent communication skills to collaborate effectively across teams. Seeking opportunities in Kuwait, Saudi Arabia, UAE, Egypt (Alexandria), Switzerland, Spain, Netherlands, Sweden, Germany, Ireland, and Poland.
                     </p>
                 </div>
+
+
             </div>
         </div>
     </section>
@@ -535,10 +541,31 @@
         <div class="container">
             <h2 class="section-title"><i class="fas fa-briefcase"></i> Professional Experience</h2>
             
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h3>IT Specialist | LC Waikiki</h3>
+                        <span class="date">01/2026 - Present | Alexandria, Egypt</span>
+                    </div>
+                <p style="color: var(--sub-text-color); font-weight: bold;">LC Waikiki | Borg Alarab, Alexandria, Egypt</p>
+                <ul>
+                    <li>Provided <strong>L1/L2 technical support</strong> for end users, resolving hardware, software, and network issues across multiple departments.</li>
+                    <li>Managed and supported <strong>Windows systems, user accounts, and access permissions</strong>, ensuring secure and efficient daily operations.</li>
+                    <li>Supported <strong>Microsoft 365 services</strong> including Outlook, Teams, OneDrive, and SharePoint.</li>
+                    <li>Troubleshot <strong>LAN/WAN, Wi-Fi, printers, scanners, and POS systems</strong> in a retail environment.</li>
+                    <li>Installed, configured, and maintained <strong>workstations, laptops, and retail IT equipment</strong>.</li>
+                    <li>Monitored system performance and handled <strong>incident and service requests</strong> to minimize downtime.</li>
+                    <li>Ensured <strong>data backup, system security, and compliance</strong> with company IT policies.</li>
+                    <li>Coordinated with <strong>vendors and service providers</strong> for hardware and software issues.</>
+                    <li>Documented technical procedures and maintained <strong>IT assets inventory</strong>.</li>
+                    <li>Contributed to improving system stability and <strong>user satisfaction</strong> through proactive support.</li>
+                </ul>
+                </div>
+
+
             <div class="experience-card">
                 <div class="experience-header">
                     <h3>System Administrator | Yemen Embassy</h3>
-                    <span class="date">07/2024 - 10/2025 | Giza, Egypt</span>
+                    <span class="date">07/2024 - 11/2025 | Giza, Egypt</span>
                 </div>
                 <p style="color: var(--sub-text-color); font-weight: bold;">Yemen Embassy | Giza, Egypt</p>
                 <ul>
@@ -558,7 +585,7 @@
             <div class="experience-card">
                 <div class="experience-header">
                     <h3>IT Technical Support Specialist | Business Code</h3>
-                    <span class="date">07/2024 - 10/2024 | Cairo, Egypt</span>
+                    <span class="date">07/2024 - 11/2024 | Cairo, Egypt</span>
                 </div>
                 <p style="color: var(--sub-text-color); font-weight: bold;">Business Code | Cairo, Egypt</p>
                 <ul>
@@ -594,105 +621,124 @@
     </section>
 
     <section id="skills" class="section">
-        <div class="container">
-            <h2 class="section-title"><i class="fas fa-clipboard-list"></i> Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3><i class="fas fa-users-cog"></i> Systems & Servers</h3>
-                    <ul class="skill-list-items">
-                        <li><strong>Windows Server:</strong> 2016, 2019, 2022</li>
-                        <li><strong>Active Directory:</strong> Group Policy, DNS, DHCP</li>
-                        <li><strong>WSUS:</strong> Windows Server Update Services</li>
-                        <li><strong>WDS:</strong> Windows Deployment Services</li>
-                        <li><strong>Linux:</strong> Intermediate Level</li>
-                        <li><strong>Microsoft 365:</strong> Administration</li>
-                    </ul>
-                </div>
+    <div class="container">
+        <h2 class="section-title"><i class="fas fa-clipboard-list"></i> Technical Skills</h2>
+        <div class="skills-grid">
 
-                <div class="skill-card">
-                    <h3><i class="fas fa-shield-alt"></i> Cybersecurity</h3>
-                    <ul class="skill-list-items">
-                        <li><strong>Firewalls:</strong> FortiGate, Sophos</li>
-                        <li><strong>IT General Controls:</strong> User Access, Password Policies</li>
-                        <li><strong>Vulnerability Assessment:</strong> Patch Management</li>
-                        <li><strong>Backup & Recovery:</strong> Multi-Factor Authentication</li>
-                        <li><strong>Network Security:</strong> SIEM Tools, Penetration Testing</li>
-                    </ul>
-                </div>
-
-                <div class="skill-card">
-                    <h3><i class="fas fa-network-wired"></i> Networking</h3>
-                    <ul class="skill-list-items">
-                        <li><strong>TCP/IP, VLANs:</strong> Routing & Switching</li>
-                        <li><strong>LAN/WAN, VPN:</strong> Network Access Control</li>
-                        <li><strong>Cisco IOS:</strong> Configuration</li>
-                        <li><strong>Network Analysis:</strong> Wireshark</li>
-                    </ul>
-                </div>
-
-                <div class="skill-card">
-                    <h3><i class="fas fa-cloud"></i> Cloud & Virtualization</h3>
-                    <ul class="skill-list-items">
-                        <li><strong>Cloud Platforms:</strong> Azure, AWS</li>
-                        <li><strong>Infrastructure as Code:</strong> Terraform</li>
-                        <li><strong>Virtualization:</strong> VMware ESXi, Proxmox VE, Hyper-V</li>
-                        <li><strong>Containerization:</strong> Docker</li>
-                    </ul>
-                </div>
-
-                <div class="skill-card">
-                    <h3><i class="fas fa-code"></i> Scripting & Automation</h3>
-                    <ul class="skill-list-items">
-                        <li><strong>PowerShell:</strong> Administration & Automation</li>
-                        <li><strong>Python:</strong> Basic for IT Tasks</li>
-                        <li><strong>Workflow Automation:</strong> make.com, n8n</li>
-                        <li><strong>Odoo ERP:</strong> Workflow/Module Management</li>
-                    </ul>
-                </div>
-
-                <div class="skill-card">
-                    <h3><i class="fas fa-toolbox"></i> Hardware & Infrastructure</h3>
-                    <ul class="skill-list-items">
-                        <li><strong>Server Management:</strong> Installation & Upgrades</li>
-                        <li><strong>Rack Mounting:</strong> Structured Cabling</li>
-                        <li><strong>UPS Systems:</strong> Printers & Peripherals</li>
-                        <li><strong>CCTV:</strong> Installation & Maintenance</li>
-                        <li><strong>Fingerprint Systems:</strong> Configuration & Management</li>
-                    </ul>
-                </div>
-
-                <div class="skill-card">
-                    <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
-                    <ul class="skill-list-items">
-                        <li><strong>Imaging Tools:</strong> Acronis, Clonezilla</li>
-                        <li><strong>Web Hosting:</strong> cPanel, DNS Management</li>
-                        <li><strong>Collaboration:</strong> JIRA, ITIL Framework Knowledge, Slack, Zoom, Google Workspace</li>
-                        <li><strong>Remote Access:</strong> AnyDesk, TeamViewer, iDRAC, iLO, IPMI</li>
-                    </ul>
-                </div>
-
-                <div class="skill-card">
-                    <h3><i class="fas fa-file-alt"></i> Soft Skills</h3>
-                    <ul class="skill-list-items">
-                        <li><strong>Documentation:</strong> ITIL Framework Knowledge (Incident, Problem, Change Management), Excel, PowerPoint, Word</li>
-                        <li><strong>Time Management:</strong> Task Prioritization</li>
-                        <li><strong>Problem-Solving:</strong> Technical Troubleshooting</li>
-                        <li><strong>Communication:</strong> Effective Collaboration</li>
-                    </ul>
-                </div>
-
-                <div class="skill-card">
-                    <h3><i class="fas fa-language"></i> Languages</h3>
-                    <ul class="skill-list-items">
-                        <li><strong>Arabic:</strong> Native</li>
-                        <li><strong>English:</strong> Fluent (Conversational & Professional)</li>
-                        <li><strong>German:</strong> Basics (Currently Studying)</li>
-                        <li><strong>Spanish:</strong> Basics (Currently Studying)</li>
-                    </ul>
-                </div>
+            <div class="skill-card">
+                <h3><i class="fas fa-server"></i> Systems & Servers</h3>
+                <ul class="skill-list-items">
+                    <li><strong>Windows Server:</strong> 2016, 2019, 2022</li>
+                    <li><strong>Active Directory:</strong> GPO, DNS, DHCP</li>
+                    <li><strong>Deployment:</strong> WSUS, WDS</li>
+                    <li><strong>Linux:</strong> Ubuntu, CentOS (Intermediate)</li>
+                    <li><strong>Microsoft 365:</strong> Administration</li>
+                </ul>
             </div>
+
+            <div class="skill-card">
+                <h3><i class="fas fa-shield-alt"></i> Cybersecurity</h3>
+                <ul class="skill-list-items">
+                    <li><strong>Firewalls:</strong> FortiGate, Sophos</li>
+                    <li><strong>Access Control:</strong> MFA, User Permissions</li>
+                    <li><strong>Vulnerability:</strong> Patch Management</li>
+                    <li><strong>Monitoring:</strong> SIEM Tools</li>
+                    <li><strong>Backup & Recovery:</strong> Disaster Recovery</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3><i class="fas fa-network-wired"></i> Networking</h3>
+                <ul class="skill-list-items">
+                    <li><strong>Protocols:</strong> TCP/IP, VLANs</li>
+                    <li><strong>Infrastructure:</strong> LAN/WAN, VPN</li>
+                    <li><strong>Routing & Switching:</strong> Cisco IOS</li>
+                    <li><strong>Analysis:</strong> Wireshark</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3><i class="fas fa-cloud"></i> Cloud & Virtualization</h3>
+                <ul class="skill-list-items">
+                    <li><strong>Cloud Platforms:</strong> AWS, Azure</li>
+                    <li><strong>Infrastructure as Code:</strong> Terraform</li>
+                    <li><strong>Virtualization:</strong> VMware, Proxmox, Hyper-V</li>
+                    <li><strong>Containers:</strong> Docker</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3><i class="fas fa-code"></i> Programming & Development</h3>
+                <ul class="skill-list-items">
+                    <li><strong>Backend:</strong> PHP, Laravel</li>
+                    <li><strong>Automation:</strong> Python</li>
+                    <li><strong>Version Control:</strong> Git, GitHub</li>
+                    <li><strong>Web:</strong> HTML, CSS, JavaScript (Basic)</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3><i class="fas fa-terminal"></i> Scripting & Automation</h3>
+                <ul class="skill-list-items">
+                    <li><strong>PowerShell:</strong> Administration & Automation</li>
+                    <li><strong>Workflow Automation:</strong> make.com, n8n</li>
+                    <li><strong>ERP Systems:</strong> Odoo (Workflow Management)</li>
+                    <li><strong>Ticketing:</strong> JIRA</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3><i class="fas fa-industry"></i> Enterprise Systems</h3>
+                <ul class="skill-list-items">
+                    <li><strong>SAP:</strong> User Support & Access (Currently Learning)</li>
+                    <li><strong>Odoo:</strong> ERP Modules & Workflows</li>
+                    <li><strong>ITIL:</strong> Incident & Change Management</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3><i class="fas fa-tools"></i> Hardware & Infrastructure</h3>
+                <ul class="skill-list-items">
+                    <li><strong>Servers:</strong> Installation & Upgrades</li>
+                    <li><strong>Data Centers:</strong> Rack Mounting & Cabling</li>
+                    <li><strong>Power:</strong> UPS Systems</li>
+                    <li><strong>Security:</strong> CCTV & Fingerprint Systems</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3><i class="fas fa-toolbox"></i> Tools & Platforms</h3>
+                <ul class="skill-list-items">
+                    <li><strong>Imaging:</strong> Acronis, Clonezilla</li>
+                    <li><strong>Hosting:</strong> cPanel, DNS Management</li>
+                    <li><strong>Remote:</strong> AnyDesk, TeamViewer, iLO, iDRAC</li>
+                    <li><strong>Collaboration:</strong> Slack, Zoom, Google Workspace</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3><i class="fas fa-user-tie"></i> Professional Skills</h3>
+                <ul class="skill-list-items">
+                    <li><strong>Documentation:</strong> Excel, Word, PowerPoint</li>
+                    <li><strong>Time Management:</strong> Task Prioritization</li>
+                    <li><strong>Problem Solving:</strong> Troubleshooting</li>
+                    <li><strong>Communication:</strong> Cross-team Collaboration</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3><i class="fas fa-language"></i> Languages</h3>
+                <ul class="skill-list-items">
+                    <li><strong>Arabic:</strong> Native</li>
+                    <li><strong>English:</strong> Professional</li>
+                    <li><strong>German:</strong> Basic (Learning)</li>
+                    <li><strong>Spanish:</strong> Basic (Learning)</li>
+                </ul>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
     <section id="projects" class="section">
         <div class="container">
@@ -764,7 +810,7 @@
                 <a href="https://drive.google.com/file/d/1--NnUlYGhRy6wp8aESoRU7q66YGDcRSF/view?usp=drive_link" target="_blank" class="cert-item in-progress"><i class="fas fa-award"></i><b>Recommendation Letter from the Embassy of the Republic of Yemen</b> </a>
                 
                 <a href="#" target="_blank" class="cert-item in-progress"><i class="fas fa-hourglass-half"></i> Odoo ERP Workflow/Module Management (Studying)</a>
-                <a href="#" target="_blank" class="cert-item in-progress"><i class="fas fa-hourglass-half"></i> Azure Administrator (AZ-104, Self-Study)</a>
+                <a href="#" target="_blank" class="cert-item in-progress"><i class="fas fa-hourglass-half"></i> SAP ERP System (Studying)</a>
                 <a href="https://drive.google.com/open?id=14lB-8Lkwtp6G0reVBGe1zf3o3HicjFoT&usp=drive_fs" target="_blank" class="cert-item"><i class="fas fa-server"></i> MCSA & System Admin (Self-Study)</a>
                 <a href="https://drive.google.com/file/d/1l915MpcZGB91xRPAYVEreUxTK_SRQR3m/view?usp=drive_link" target="_blank" class="cert-item"><i class="fas fa-project-diagram"></i> CCNA (Self-Study)</a>
                 <a href="https://drive.google.com/file/d/1PeY7FrInqNBnIxiV4D2W1MsDBeMsFWSy/view?usp=drivesdk" target="_blank" class="cert-item"><i class="fab fa-google"></i> Google Technical Support Professional Certificate</a>
@@ -787,7 +833,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Hossam Yosri - IT Specialist. All rights reserved.</p>
+            <p>&copy; 2026 Hossam Yosri - IT Specialist. All rights reserved.</p>
         </div>
     </footer>
 
@@ -830,3 +876,4 @@
     </script>
 </body>
 </html>
+
