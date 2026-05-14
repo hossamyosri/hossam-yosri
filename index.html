@@ -1,0 +1,1964 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hossam Yosri - IT Specialist, System Administrator, and DevOps learner focused on infrastructure, support, automation, cloud basics, and AI-assisted workflows.">
+  <meta name="keywords" content="Hossam Yosri, IT Specialist, System Administrator, DevOps, Technical Support, Egypt, Microsoft 365, Linux, Docker, Azure, AWS">
+  <meta name="author" content="Hossam Yosri">
+  <meta name="theme-color" content="#0f766e">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hossam Yosri | IT Specialist & System Administrator">
+  <meta property="og:description" content="Professional portfolio for IT infrastructure, system administration, DevOps learning, automation, and AI workflow experience.">
+  <meta property="og:image" content="img/me2.jpg">
+  <meta property="og:url" content="https://hossamyosri.github.io/hossam-yosri/">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Hossam Yosri | IT Specialist & DevOps Learner</title>
+  <link rel="canonical" href="https://hossamyosri.github.io/hossam-yosri/">
+  <link rel="icon" href="img/me1.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7faf9;
+      --surface: rgba(255, 255, 255, 0.86);
+      --surface-strong: #ffffff;
+      --text: #17211f;
+      --muted: #60706c;
+      --line: rgba(15, 118, 110, 0.16);
+      --brand: #0f766e;
+      --brand-2: #2563eb;
+      --accent: #d97706;
+      --success: #15803d;
+      --danger: #be123c;
+      --shadow: 0 24px 70px rgba(23, 33, 31, 0.11);
+      --soft-shadow: 0 14px 38px rgba(23, 33, 31, 0.08);
+      --radius: 8px;
+      --radius-lg: 14px;
+      --max: 1180px;
+      --header-h: 74px;
+    }
+
+    [data-theme="dark"] {
+      color-scheme: dark;
+      --bg: #101716;
+      --surface: rgba(21, 32, 30, 0.82);
+      --surface-strong: #17211f;
+      --text: #eef7f5;
+      --muted: #a8bbb6;
+      --line: rgba(94, 234, 212, 0.16);
+      --brand: #2dd4bf;
+      --brand-2: #60a5fa;
+      --accent: #fbbf24;
+      --success: #86efac;
+      --danger: #fb7185;
+      --shadow: 0 24px 70px rgba(0, 0, 0, 0.34);
+      --soft-shadow: 0 14px 38px rgba(0, 0, 0, 0.28);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      background:
+        radial-gradient(circle at top left, rgba(15, 118, 110, 0.13), transparent 30rem),
+        radial-gradient(circle at 85% 20%, rgba(37, 99, 235, 0.10), transparent 28rem),
+        var(--bg);
+      color: var(--text);
+      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+      line-height: 1.65;
+      transition: background-color 180ms ease, color 180ms ease;
+    }
+
+    body[dir="rtl"] {
+      font-family: Tahoma, "Segoe UI", Arial, sans-serif;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    button,
+    input,
+    textarea {
+      font: inherit;
+    }
+
+    .container {
+      width: min(100% - 40px, var(--max));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      min-height: var(--header-h);
+      border-bottom: 1px solid var(--line);
+      background: color-mix(in srgb, var(--surface-strong) 88%, transparent);
+      backdrop-filter: blur(18px);
+    }
+
+    .nav {
+      min-height: var(--header-h);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      font-weight: 800;
+      letter-spacing: 0;
+      white-space: nowrap;
+    }
+
+    .brand-mark {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border-radius: 8px;
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      color: #fff;
+      box-shadow: var(--soft-shadow);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+    }
+
+    .nav-links a {
+      padding: 9px 11px;
+      border-radius: 8px;
+      color: var(--muted);
+      font-size: 0.94rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: color 160ms ease, background 160ms ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus-visible {
+      color: var(--text);
+      background: color-mix(in srgb, var(--brand) 10%, transparent);
+      outline: none;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .icon-btn,
+    .menu-btn {
+      width: 42px;
+      height: 42px;
+      display: inline-grid;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface);
+      color: var(--text);
+      cursor: pointer;
+      transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+    }
+
+    .icon-btn:hover,
+    .menu-btn:hover {
+      transform: translateY(-1px);
+      border-color: color-mix(in srgb, var(--brand) 45%, var(--line));
+    }
+
+    .menu-btn {
+      display: none;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 44px;
+      padding: 0 16px;
+      border: 1px solid transparent;
+      border-radius: 8px;
+      background: var(--brand);
+      color: #fff;
+      font-weight: 800;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0 16px 34px rgba(15, 118, 110, 0.22);
+      transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+    }
+
+    .btn:hover,
+    .btn:focus-visible {
+      transform: translateY(-2px);
+      box-shadow: 0 20px 42px rgba(15, 118, 110, 0.28);
+      outline: none;
+    }
+
+    .btn.secondary {
+      background: transparent;
+      color: var(--text);
+      border-color: var(--line);
+      box-shadow: none;
+    }
+
+    .btn.ghost {
+      background: color-mix(in srgb, var(--brand) 10%, transparent);
+      color: var(--brand);
+      border-color: var(--line);
+      box-shadow: none;
+    }
+
+    .btn.disabled,
+    .btn[aria-disabled="true"] {
+      opacity: 0.55;
+      pointer-events: none;
+      box-shadow: none;
+    }
+
+    .hero {
+      padding: 72px 0 42px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr);
+      gap: 30px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin: 0 0 18px;
+      padding: 7px 11px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--surface) 82%, transparent);
+      color: var(--brand);
+      font-size: 0.92rem;
+      font-weight: 800;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      margin-bottom: 14px;
+      font-size: clamp(2.4rem, 5vw, 5.25rem);
+      line-height: 0.98;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 720px;
+      color: var(--muted);
+      font-size: clamp(1.03rem, 1.4vw, 1.2rem);
+    }
+
+    .typing-line {
+      min-height: 38px;
+      margin: 0 0 18px;
+      color: var(--brand);
+      font-size: clamp(1.25rem, 2vw, 1.7rem);
+      font-weight: 900;
+    }
+
+    .typing-line::after {
+      content: "";
+      display: inline-block;
+      width: 2px;
+      height: 1em;
+      margin-inline-start: 5px;
+      background: var(--accent);
+      vertical-align: -0.12em;
+      animation: blink 900ms steps(1) infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+
+    .hero-actions,
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .hero-badges {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 26px;
+    }
+
+    .info-badge {
+      min-height: 96px;
+      padding: 15px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+      box-shadow: var(--soft-shadow);
+    }
+
+    .info-badge i {
+      color: var(--accent);
+      margin-inline-end: 8px;
+    }
+
+    .info-badge strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--text);
+    }
+
+    .info-badge span {
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .profile-panel {
+      position: relative;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .profile-photo {
+      aspect-ratio: 4 / 5;
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+      object-position: center top;
+      border: 1px solid var(--line);
+    }
+
+    .availability {
+      position: absolute;
+      inset-inline: 32px;
+      bottom: 32px;
+      padding: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      border-radius: 8px;
+      background: rgba(15, 23, 42, 0.78);
+      color: #fff;
+      backdrop-filter: blur(12px);
+    }
+
+    .availability strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .availability span {
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 0.92rem;
+    }
+
+    .section {
+      padding: 72px 0;
+      scroll-margin-top: calc(var(--header-h) + 16px);
+    }
+
+    .section.alt {
+      background: color-mix(in srgb, var(--surface-strong) 58%, transparent);
+      border-block: 1px solid var(--line);
+    }
+
+    .section-head {
+      max-width: 760px;
+      margin-bottom: 30px;
+    }
+
+    .section-kicker {
+      color: var(--brand);
+      font-weight: 900;
+      text-transform: uppercase;
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+    }
+
+    body[dir="rtl"] .section-kicker {
+      letter-spacing: 0;
+    }
+
+    .section-title {
+      margin: 6px 0 10px;
+      font-size: clamp(1.8rem, 3vw, 2.7rem);
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+
+    .section-copy {
+      color: var(--muted);
+      font-size: 1.03rem;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+      gap: 22px;
+      align-items: stretch;
+    }
+
+    .glass-card,
+    .skill-card,
+    .project-card,
+    .timeline-item,
+    .roadmap-card,
+    .contact-card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+      box-shadow: var(--soft-shadow);
+    }
+
+    .glass-card {
+      padding: 24px;
+    }
+
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .metric {
+      padding: 15px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: color-mix(in srgb, var(--surface-strong) 72%, transparent);
+    }
+
+    .metric strong {
+      display: block;
+      color: var(--brand);
+      font-size: 1.45rem;
+      line-height: 1.1;
+    }
+
+    .metric span {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .chip-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-content: flex-start;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 36px;
+      padding: 0 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--surface-strong) 72%, transparent);
+      color: var(--text);
+      font-weight: 700;
+      font-size: 0.92rem;
+    }
+
+    .chip i {
+      color: var(--brand);
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .skill-card {
+      padding: 18px;
+      transition: transform 180ms ease, border-color 180ms ease;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-4px);
+      border-color: color-mix(in srgb, var(--brand) 50%, var(--line));
+    }
+
+    .skill-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-height: 42px;
+      margin-bottom: 12px;
+      font-weight: 900;
+      line-height: 1.25;
+    }
+
+    .skill-title i {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      border-radius: 8px;
+      background: color-mix(in srgb, var(--brand) 12%, transparent);
+      color: var(--brand);
+      flex: 0 0 auto;
+    }
+
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .skill-pill {
+      padding: 5px 8px;
+      border-radius: 7px;
+      background: color-mix(in srgb, var(--brand-2) 9%, transparent);
+      color: var(--muted);
+      font-size: 0.84rem;
+      font-weight: 700;
+    }
+
+    .progress {
+      height: 8px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--muted) 18%, transparent);
+    }
+
+    .progress span {
+      display: block;
+      height: 100%;
+      width: var(--value);
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--brand), var(--brand-2));
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .project-card {
+      display: flex;
+      min-height: 100%;
+      flex-direction: column;
+      overflow: hidden;
+      transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      border-color: color-mix(in srgb, var(--brand) 50%, var(--line));
+      box-shadow: var(--shadow);
+    }
+
+    .project-visual {
+      min-height: 152px;
+      padding: 18px;
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      color: #fff;
+      background:
+        linear-gradient(135deg, rgba(15, 118, 110, 0.92), rgba(37, 99, 235, 0.82)),
+        repeating-linear-gradient(45deg, rgba(255,255,255,0.16) 0 1px, transparent 1px 14px);
+    }
+
+    .project-visual.pos {
+      background:
+        linear-gradient(135deg, rgba(21, 128, 61, 0.94), rgba(217, 119, 6, 0.82)),
+        repeating-linear-gradient(45deg, rgba(255,255,255,0.16) 0 1px, transparent 1px 14px);
+    }
+
+    .project-visual.gaming {
+      background:
+        linear-gradient(135deg, rgba(190, 18, 60, 0.92), rgba(37, 99, 235, 0.86)),
+        repeating-linear-gradient(45deg, rgba(255,255,255,0.16) 0 1px, transparent 1px 14px);
+    }
+
+    .project-visual i {
+      font-size: 2.4rem;
+    }
+
+    .project-visual span {
+      max-width: 170px;
+      text-align: end;
+      font-weight: 900;
+      line-height: 1.2;
+    }
+
+    .project-body {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .project-body h3 {
+      margin-bottom: 8px;
+      font-size: 1.2rem;
+    }
+
+    .project-body p {
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .feature-list {
+      display: grid;
+      gap: 7px;
+      margin: 4px 0 16px;
+      padding: 0;
+      list-style: none;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .feature-list li {
+      display: flex;
+      gap: 8px;
+    }
+
+    .feature-list i {
+      margin-top: 5px;
+      color: var(--success);
+      font-size: 0.75rem;
+      flex: 0 0 auto;
+    }
+
+    .stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-top: auto;
+    }
+
+    .stack span {
+      padding: 4px 8px;
+      border-radius: 7px;
+      background: color-mix(in srgb, var(--accent) 14%, transparent);
+      color: var(--text);
+      font-size: 0.8rem;
+      font-weight: 800;
+    }
+
+    .project-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .timeline {
+      position: relative;
+      display: grid;
+      gap: 16px;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      inset-block: 12px;
+      inset-inline-start: 19px;
+      width: 2px;
+      background: var(--line);
+    }
+
+    body[dir="rtl"] .timeline::before {
+      inset-inline-start: auto;
+      inset-inline-end: 19px;
+    }
+
+    .timeline-item {
+      position: relative;
+      padding: 20px 20px 20px 62px;
+    }
+
+    body[dir="rtl"] .timeline-item {
+      padding: 20px 62px 20px 20px;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      inset-inline-start: 10px;
+      top: 24px;
+      width: 20px;
+      height: 20px;
+      border: 4px solid var(--surface-strong);
+      border-radius: 999px;
+      background: var(--brand);
+      box-shadow: 0 0 0 1px var(--line);
+    }
+
+    body[dir="rtl"] .timeline-dot {
+      inset-inline-start: auto;
+      inset-inline-end: 10px;
+    }
+
+    .timeline-meta {
+      color: var(--brand);
+      font-weight: 900;
+      font-size: 0.9rem;
+    }
+
+    .timeline-item h3 {
+      margin: 3px 0 8px;
+    }
+
+    .timeline-item p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .timeline-list {
+      display: grid;
+      gap: 7px;
+      margin: 12px 0 0;
+      padding: 0;
+      list-style: none;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .timeline-list li {
+      display: flex;
+      gap: 8px;
+    }
+
+    .timeline-list i {
+      margin-top: 6px;
+      color: var(--success);
+      font-size: 0.72rem;
+      flex: 0 0 auto;
+    }
+
+    .roadmap-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .education-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+      gap: 18px;
+      align-items: start;
+    }
+
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .cert-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-height: 48px;
+      padding: 11px 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: color-mix(in srgb, var(--surface-strong) 72%, transparent);
+      color: var(--muted);
+      font-weight: 750;
+    }
+
+    .cert-item i {
+      color: var(--brand);
+      flex: 0 0 auto;
+    }
+
+    .roadmap-card {
+      padding: 18px;
+    }
+
+    .roadmap-card i {
+      color: var(--brand);
+      font-size: 1.3rem;
+    }
+
+    .roadmap-card h3 {
+      margin: 10px 0 8px;
+      font-size: 1rem;
+    }
+
+    .roadmap-card p {
+      min-height: 46px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .ai-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .ai-list {
+      display: grid;
+      gap: 12px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .ai-list li {
+      display: flex;
+      gap: 12px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: color-mix(in srgb, var(--surface-strong) 72%, transparent);
+    }
+
+    .ai-list i {
+      color: var(--accent);
+      margin-top: 5px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+      gap: 18px;
+    }
+
+    .contact-card {
+      padding: 22px;
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 12px;
+      margin: 18px 0 0;
+    }
+
+    .contact-link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-height: 46px;
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      text-decoration: none;
+      color: var(--muted);
+      background: color-mix(in srgb, var(--surface-strong) 72%, transparent);
+    }
+
+    .contact-link i {
+      width: 26px;
+      color: var(--brand);
+      text-align: center;
+    }
+
+    .form-grid {
+      display: grid;
+      gap: 12px;
+    }
+
+    .field {
+      display: grid;
+      gap: 6px;
+    }
+
+    .field label {
+      color: var(--text);
+      font-weight: 800;
+      font-size: 0.92rem;
+    }
+
+    .field input,
+    .field textarea {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: color-mix(in srgb, var(--surface-strong) 78%, transparent);
+      color: var(--text);
+      padding: 12px 13px;
+      outline: none;
+      transition: border-color 160ms ease, box-shadow 160ms ease;
+    }
+
+    .field textarea {
+      min-height: 136px;
+      resize: vertical;
+    }
+
+    .field input:focus,
+    .field textarea:focus {
+      border-color: var(--brand);
+      box-shadow: 0 0 0 4px color-mix(in srgb, var(--brand) 14%, transparent);
+    }
+
+    .form-message {
+      min-height: 24px;
+      color: var(--danger);
+      font-weight: 800;
+      font-size: 0.92rem;
+    }
+
+    .form-message.success {
+      color: var(--success);
+    }
+
+    .site-footer {
+      padding: 28px 0;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      background: color-mix(in srgb, var(--surface-strong) 65%, transparent);
+      text-align: center;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 520ms ease, transform 520ms ease;
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+      }
+    }
+
+    @media (max-width: 1060px) {
+      .nav-links {
+        position: fixed;
+        top: var(--header-h);
+        inset-inline: 20px;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 12px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--surface-strong);
+        box-shadow: var(--shadow);
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .nav-links a {
+        padding: 12px;
+      }
+
+      .menu-btn {
+        display: inline-grid;
+      }
+
+      .hero-grid,
+      .about-grid,
+      .education-grid,
+      .ai-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .skills-grid,
+      .roadmap-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .project-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        width: min(100% - 28px, var(--max));
+      }
+
+      .hero {
+        padding-top: 44px;
+      }
+
+      .hero-badges,
+      .metric-grid,
+      .cert-grid,
+      .skills-grid,
+      .roadmap-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .availability {
+        position: static;
+        margin-top: 12px;
+      }
+
+      .section {
+        padding: 52px 0;
+      }
+
+      .nav-actions .btn {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body data-theme="light">
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#home" class="brand" aria-label="Hossam Yosri home">
+        <span class="brand-mark">HY</span>
+        <span>Hossam Yosri</span>
+      </a>
+      <nav id="nav-links" class="nav-links" aria-label="Primary navigation"></nav>
+      <div class="nav-actions">
+        <button id="lang-toggle" class="icon-btn" type="button" aria-label="Switch language">AR</button>
+        <button id="theme-toggle" class="icon-btn" type="button" aria-label="Switch color theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <a class="btn" href="#contact" data-i18n="navCta">Contact</a>
+        <button id="menu-toggle" class="menu-btn" type="button" aria-label="Open navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <p class="eyebrow"><i class="fa-solid fa-circle-check"></i><span data-i18n="heroEyebrow">Available for technical opportunities</span></p>
+          <h1 data-i18n="heroTitle">IT Specialist building reliable infrastructure and smarter support workflows.</h1>
+          <p class="typing-line"><span id="typing-role"></span></p>
+          <p class="lead" data-i18n="heroLead"></p>
+          <div class="hero-actions">
+            <a class="btn" href="Hossam-Yosri_ITS_CV0.pdf" download><i class="fa-solid fa-download"></i><span data-i18n="downloadCv">Download CV</span></a>
+            <a class="btn secondary" href="#contact"><i class="fa-solid fa-paper-plane"></i><span data-i18n="contactMe">Contact Me</span></a>
+            <a class="btn ghost" href="#projects"><i class="fa-solid fa-layer-group"></i><span data-i18n="viewProjects">View Projects</span></a>
+          </div>
+          <div id="hero-badges" class="hero-badges"></div>
+        </div>
+
+        <aside class="profile-panel reveal" aria-label="Profile summary">
+          <img class="profile-photo" src="img/me2.jpg" alt="Hossam Yosri portrait" loading="eager">
+          <div class="availability">
+            <strong data-i18n="currentRole">IT Specialist at LC Waikiki</strong>
+            <span data-i18n="location">Alexandria, Egypt | Open to relocation and remote collaboration</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker" data-i18n="aboutKicker">About</span>
+          <h2 class="section-title" data-i18n="aboutTitle"></h2>
+          <p class="section-copy" data-i18n="aboutCopy"></p>
+        </div>
+        <div class="about-grid">
+          <div class="glass-card reveal">
+            <h3 data-i18n="aboutCardTitle"></h3>
+            <p data-i18n="aboutCardCopy"></p>
+            <div id="metrics" class="metric-grid"></div>
+          </div>
+          <div class="glass-card reveal">
+            <h3 data-i18n="toolboxTitle"></h3>
+            <div id="toolbox" class="chip-cloud"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker" data-i18n="skillsKicker">Capabilities</span>
+          <h2 class="section-title" data-i18n="skillsTitle"></h2>
+          <p class="section-copy" data-i18n="skillsCopy"></p>
+        </div>
+        <div id="skills-grid" class="skills-grid"></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker" data-i18n="projectsKicker">Projects</span>
+          <h2 class="section-title" data-i18n="projectsTitle"></h2>
+          <p class="section-copy" data-i18n="projectsCopy"></p>
+        </div>
+        <div id="project-grid" class="project-grid"></div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker" data-i18n="experienceKicker">Experience</span>
+          <h2 class="section-title" data-i18n="experienceTitle"></h2>
+          <p class="section-copy" data-i18n="experienceCopy"></p>
+        </div>
+        <div id="timeline" class="timeline"></div>
+      </div>
+    </section>
+
+    <section id="education" class="section alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker" data-i18n="educationKicker">Education</span>
+          <h2 class="section-title" data-i18n="educationTitle"></h2>
+          <p class="section-copy" data-i18n="educationCopy"></p>
+        </div>
+        <div id="education-grid" class="education-grid"></div>
+      </div>
+    </section>
+
+    <section id="devops" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker" data-i18n="devopsKicker">Learning journey</span>
+          <h2 class="section-title" data-i18n="devopsTitle"></h2>
+          <p class="section-copy" data-i18n="devopsCopy"></p>
+        </div>
+        <div id="roadmap" class="roadmap-grid"></div>
+      </div>
+    </section>
+
+    <section id="ai" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker" data-i18n="aiKicker">AI workflows</span>
+          <h2 class="section-title" data-i18n="aiTitle"></h2>
+          <p class="section-copy" data-i18n="aiCopy"></p>
+        </div>
+        <div class="ai-grid">
+          <div class="glass-card reveal">
+            <h3 data-i18n="aiCardTitle"></h3>
+            <p data-i18n="aiCardCopy"></p>
+          </div>
+          <ul id="ai-list" class="ai-list"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker" data-i18n="contactKicker">Contact</span>
+          <h2 class="section-title" data-i18n="contactTitle"></h2>
+          <p class="section-copy" data-i18n="contactCopy"></p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card reveal">
+            <h3 data-i18n="contactDirectTitle"></h3>
+            <div id="contact-list" class="contact-list"></div>
+            <div class="contact-actions">
+              <a class="btn" href="Hossam-Yosri_ITS_CV0.pdf" download><i class="fa-solid fa-download"></i><span data-i18n="downloadCv">Download CV</span></a>
+            </div>
+          </div>
+          <form id="contact-form" class="contact-card form-grid reveal" novalidate>
+            <div class="field">
+              <label for="name" data-i18n="formName">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="email" data-i18n="formEmail">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="message" data-i18n="formMessage">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+            <button class="btn" type="submit"><i class="fa-solid fa-paper-plane"></i><span data-i18n="formSend">Send Message</span></button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p data-i18n="footerText"></p>
+    </div>
+  </footer>
+
+  <script>
+    const profile = {
+      email: "hossamyousry907@gmail.com",
+      github: "https://github.com/hossamyosri",
+      linkedin: "https://www.linkedin.com/in/hossam-yosri/",
+      whatsappKuwait: "https://wa.me/96561003591",
+      whatsappEgypt: "https://wa.me/201026214384"
+    };
+
+    const content = {
+      en: {
+        navCta: "Contact",
+        heroEyebrow: "Available for technical opportunities",
+        heroTitle: "IT Specialist building reliable infrastructure and smarter support workflows.",
+        heroLead: "I support business-critical IT environments across systems, networks, cloud basics, virtualization, automation, and end-user operations, with a growing DevOps and cloud engineering focus.",
+        currentRole: "IT Specialist at LC Waikiki",
+        location: "Alexandria, Egypt | Open to relocation and remote collaboration",
+        downloadCv: "Download CV",
+        contactMe: "Contact Me",
+        viewProjects: "View Projects",
+        aboutKicker: "About",
+        aboutTitle: "Practical IT operations experience with a modern automation mindset.",
+        aboutCopy: "My work spans infrastructure support, system administration, networking, cloud foundations, virtualization, IT troubleshooting, and productivity improvements using automation and AI tools.",
+        aboutCardTitle: "What I bring",
+        aboutCardCopy: "I focus on stable systems, clear documentation, fast troubleshooting, and calm support experiences. I have hands-on exposure to Microsoft 365, Windows Server, Linux, VMware, Hyper-V, Docker, FortiGate, Azure basics, AWS basics, PowerShell, Python, Odoo ERP, and IT support operations.",
+        toolboxTitle: "Technical toolbox",
+        skillsKicker: "Capabilities",
+        skillsTitle: "Categorized technical skills",
+        skillsCopy: "A recruiter-friendly view of the technologies I use, support, study, and apply across IT infrastructure and DevOps foundations.",
+        projectsKicker: "Projects",
+        projectsTitle: "Project showcase",
+        projectsCopy: "Product-style cards for business systems, dashboards, and infrastructure projects, with clear stacks, features, and action links.",
+        experienceKicker: "Experience",
+        experienceTitle: "Professional timeline",
+        experienceCopy: "Roles focused on IT operations, system administration, support, infrastructure, and client-facing troubleshooting.",
+        educationKicker: "Education",
+        educationTitle: "Education, certificates, and recognition",
+        educationCopy: "Academic background, technical certificates, and activities that support my IT infrastructure and support career.",
+        devopsKicker: "Learning journey",
+        devopsTitle: "DevOps and cloud roadmap",
+        devopsCopy: "Currently studying DevOps Engineering and Cloud Technologies through practical labs, documentation, and project-based learning.",
+        aiKicker: "AI workflows",
+        aiTitle: "AI and prompt engineering",
+        aiCopy: "Experienced in AI tools, prompt engineering, workflow automation, and productivity optimization using AI technologies.",
+        aiCardTitle: "Responsible AI-assisted work",
+        aiCardCopy: "I use AI as a practical assistant for documentation, troubleshooting structure, script planning, technical research, workflow design, and repeatable support procedures, while keeping human review and operational accuracy at the center.",
+        contactKicker: "Contact",
+        contactTitle: "Let us discuss IT support, infrastructure, or automation work.",
+        contactCopy: "Reach me directly or send a short message. The form validates input and opens your email client with a ready-to-send message.",
+        contactDirectTitle: "Direct channels",
+        formName: "Name",
+        formEmail: "Email",
+        formMessage: "Message",
+        formSend: "Send Message",
+        formRequired: "Please complete all fields with a valid email address.",
+        formReady: "Looks good. Opening your email client now.",
+        footerText: "© 2026 Hossam Yosri. IT Specialist, System Administrator, and DevOps learner.",
+        roles: ["IT Specialist", "System Administrator", "DevOps Engineer (Learning Path)", "Technical Support Engineer", "AI Prompt Engineer"],
+        nav: [
+          ["About", "#about"],
+          ["Skills", "#skills"],
+          ["Projects", "#projects"],
+          ["Experience", "#experience"],
+          ["Education", "#education"],
+          ["DevOps", "#devops"],
+          ["AI", "#ai"]
+        ],
+        badges: [
+          ["fa-solid fa-cloud", "DevOps focus", "Currently studying DevOps Engineering and Cloud Technologies."],
+          ["fa-solid fa-wand-magic-sparkles", "AI-enabled workflows", "AI tools, prompt engineering, workflow automation, and productivity optimization."]
+        ],
+        metrics: [
+          ["3+", "Years of hands-on IT support and administration"],
+          ["L1/L2", "Technical support, incidents, access, and systems"],
+          ["M365", "Cloud collaboration and user administration"],
+          ["IT Ops", "Documentation, troubleshooting, and service quality"]
+        ],
+        toolbox: ["Microsoft 365", "Windows Server", "Linux", "VMware", "Hyper-V", "Docker", "FortiGate", "Sophos", "Azure basics", "AWS basics", "PowerShell", "Python", "Bash", "Odoo ERP", "JIRA", "Git/GitHub"],
+        skills: [
+          ["fa-solid fa-server", "Systems & Servers", 88, ["Windows Server 2016/2019/2022", "Active Directory", "GPO, DNS, DHCP", "WSUS, WDS", "Microsoft 365"]],
+          ["fa-solid fa-shield-halved", "Cybersecurity", 76, ["FortiGate", "Sophos", "MFA", "Patch management", "SIEM basics", "Backup & recovery"]],
+          ["fa-solid fa-network-wired", "Networking", 84, ["TCP/IP", "VLANs", "LAN/WAN", "VPN", "Cisco IOS", "Wireshark"]],
+          ["fa-solid fa-cloud", "Cloud & DevOps", 66, ["AWS basics", "Azure basics", "Docker", "Terraform", "Git/GitHub", "CI/CD concepts"]],
+          ["fa-solid fa-cubes", "Virtualization", 80, ["VMware", "Proxmox", "Hyper-V", "Lab environments"]],
+          ["fa-solid fa-code", "Programming & Development", 64, ["Python", "PHP", "Laravel", "HTML/CSS", "JavaScript basics"]],
+          ["fa-solid fa-terminal", "Scripting & Automation", 73, ["PowerShell", "Bash", "Python automation", "make.com", "n8n", "Runbooks"]],
+          ["fa-solid fa-building-circle-check", "Enterprise Systems", 68, ["Odoo ERP", "SAP user support", "JIRA", "ITIL incidents", "Change management"]],
+          ["fa-solid fa-screwdriver-wrench", "Hardware & Infrastructure", 82, ["Servers", "Rack mounting", "Cabling", "UPS", "CCTV", "Fingerprint systems"]],
+          ["fa-solid fa-toolbox", "Tools & Platforms", 78, ["Acronis", "Clonezilla", "cPanel", "DNS hosting", "AnyDesk", "TeamViewer", "iLO/iDRAC"]],
+          ["fa-solid fa-user-tie", "Professional Skills", 86, ["Documentation", "Excel/Word/PowerPoint", "Time management", "Problem solving", "Communication"]],
+          ["fa-solid fa-language", "Languages", 78, ["Arabic native", "English professional", "German basic", "Spanish basic"]],
+          ["fa-solid fa-robot", "AI & Prompt Engineering", 74, ["Prompt design", "AI-assisted workflows", "Productivity", "Technical research"]]
+        ],
+        projects: [
+          {
+            title: "Clinic Management System",
+            icon: "fa-solid fa-house-medical",
+            className: "clinic",
+            description: "A complete clinic and medical management platform for daily healthcare operations and reporting.",
+            features: ["Patient, doctor, and appointment management", "Radiology, laboratory, prescriptions, and reports", "Multi-role authentication, Arabic/English, dark/light mode"],
+            stack: ["React", "Supabase", "PostgreSQL", "Tailwind"],
+            repo: "https://github.com/hossamyosri",
+            demo: null
+          },
+          {
+            title: "POS & Inventory Management System",
+            icon: "fa-solid fa-cash-register",
+            className: "pos",
+            description: "A smart POS platform for stores, supermarkets, electrical shops, plumbing shops, and branch-based retail.",
+            features: ["Sales, inventory, barcode, invoices, and customers", "Multi-branch support, role permissions, analytics", "White-label branding and dark/light mode"],
+            stack: ["React", "Supabase", "PostgreSQL"],
+            repo: "https://github.com/hossamyosri",
+            demo: null
+          },
+          {
+            title: "PlayStation Gaming Lounge Management System",
+            icon: "fa-solid fa-gamepad",
+            className: "gaming",
+            description: "A responsive admin platform for PlayStation cafes and gaming centers with real-time operational control.",
+            features: ["Device/session management and timer tracking", "Orders, snacks, roles, branch isolation, and audit logs", "Arabic support and responsive dashboard"],
+            stack: ["React", "Supabase", "PostgreSQL"],
+            repo: "https://github.com/hossamyosri",
+            demo: null
+          },
+          {
+            title: "IT Automation Toolkit",
+            icon: "fa-solid fa-terminal",
+            className: "clinic",
+            description: "A command-line toolkit for routine IT support operations, diagnostics, and repetitive troubleshooting workflows.",
+            features: ["Windows Batch utilities for support tasks", "Faster recurring checks and local troubleshooting", "Reusable scripts for technician productivity"],
+            stack: ["Batch", "PowerShell concepts", "Windows"],
+            repo: "https://github.com/hossamyosri/Scripts",
+            demo: null
+          },
+          {
+            title: "Network Security Lab",
+            icon: "fa-solid fa-shield-halved",
+            className: "pos",
+            description: "A hands-on firewall and VPN lab simulating secure enterprise network controls.",
+            features: ["FortiGate and Sophos firewall configuration", "VPN tunnels, ACLs, and access control policies", "Security testing and documented network scenarios"],
+            stack: ["FortiGate", "Sophos", "VPN", "ACL"],
+            repo: "https://github.com/hossamyosri/Sophos",
+            demo: null
+          },
+          {
+            title: "Network Sniffing & Analysis",
+            icon: "fa-solid fa-magnifying-glass-chart",
+            className: "gaming",
+            description: "Traffic capture and analysis practice for troubleshooting connectivity and performance issues.",
+            features: ["Packet capture with Wireshark", "Protocol and traffic-flow analysis", "Troubleshooting patterns for network issues"],
+            stack: ["Wireshark", "TCP/IP", "Networking"],
+            repo: "https://github.com/hossamyosri/Network-Sniffing",
+            demo: null
+          },
+          {
+            title: "Network Design & Implementation",
+            icon: "fa-solid fa-sitemap",
+            className: "clinic",
+            description: "Network design practice covering VLANs, routing concepts, and firewall rules.",
+            features: ["Cisco Packet Tracer topology design", "VLAN and routing configuration scenarios", "Firewall and segmentation concepts"],
+            stack: ["Cisco", "VLANs", "Routing", "Packet Tracer"],
+            repo: "https://github.com/hossamyosri/Network",
+            demo: null
+          },
+          {
+            title: "Company Profile Website",
+            icon: "fa-solid fa-globe",
+            className: "pos",
+            description: "A clean company profile website showcasing services and business information.",
+            features: ["Static responsive website", "Service-focused content structure", "Simple front-end implementation"],
+            stack: ["HTML", "CSS"],
+            repo: "https://github.com/hossamyosri",
+            demo: "https://hossamyosri.github.io/Project/pro2.html"
+          }
+        ],
+        experience: [
+          {
+            title: "IT Specialist | LC Waikiki",
+            meta: "01/2026 - Present | Alexandria, Egypt",
+            company: "LC Waikiki | Borg Alarab, Alexandria, Egypt",
+            bullets: ["Provided L1/L2 technical support for end users across hardware, software, and network issues.", "Managed Windows systems, user accounts, access permissions, and secure daily operations.", "Supported Microsoft 365 services including Outlook, Teams, OneDrive, and SharePoint.", "Troubleshot LAN/WAN, Wi-Fi, printers, scanners, and POS systems in a retail environment.", "Installed, configured, and maintained workstations, laptops, and retail IT equipment.", "Handled incident and service requests, asset inventory, vendor coordination, backup, security, and IT policy compliance."]
+          },
+          {
+            title: "System Administrator | Yemen Embassy",
+            meta: "07/2024 - 11/2025 | Giza, Egypt",
+            company: "Yemen Embassy | Giza, Egypt",
+            bullets: ["Administered Microsoft 365, Active Directory, DNS/DHCP, Group Policies, and ticketing operations.", "Configured Sophos and FortiGate firewalls, VPN access, and security controls.", "Designed and maintained LAN infrastructure, structured cabling, routing, switching, and access policies.", "Oversaw Windows Server 2022 setup, domain services, WSUS, and WDS deployment workflows.", "Prepared IT General Controls documentation for access rights, passwords, backups, and internal audits.", "Supported onsite/remote users, SIEM basics, security assessments, and disaster recovery planning."]
+          },
+          {
+            title: "IT Technical Support Specialist | Business Code",
+            meta: "07/2024 - 11/2024 | Cairo, Egypt",
+            company: "Business Code | Cairo, Egypt",
+            bullets: ["Installed and configured Cisco switches/routers, VLANs, and Ethernet cabling.", "Provided L2 support for network troubleshooting, connectivity, and firewall configuration issues.", "Managed cPanel accounts, DNS records, and domain hosting services.", "Maintained IT documentation, inventory, change logs, rack servers, UPS systems, and cable management.", "Performed firmware/BIOS updates, Windows/Linux imaging with Acronis and Clonezilla, and endpoint protection.", "Used Wireshark for traffic analysis and supported vulnerability assessment and patching activities."]
+          },
+          {
+            title: "Freelance IT Specialist",
+            meta: "09/2021 - 12/2023",
+            company: "Remote and onsite freelance support",
+            bullets: ["Provided remote IT support through ticketing systems and remote desktop tools for diverse clients.", "Handled onboarding/offboarding, permissions, device preparation, hardware, and software troubleshooting.", "Created knowledge base articles, user guides, and basic operational documentation.", "Managed small-business network configurations, security updates, and system reliability tasks.", "Conducted small-scale security audits and developed PowerShell scripts to automate repetitive support work."]
+          }
+        ],
+        education: {
+          academicTitle: "Academic Background",
+          degree: "Bachelor of Information Technology",
+          degreeMeta: "09/2020 - 06/2024 | Matrouh University | Marsa Matrouh, Egypt",
+          military: "Military Status: Exemption",
+          awardsTitle: "Awards & Recognition",
+          awards: ["Excellence in Networking Projects - Matrouh University, 2023/2024", "Leadership Development Institute in Helwan", "Secretary of the Supreme Cultural Committee (2022/2023 + 2023/2024)"],
+          certsTitle: "Key Certifications",
+          certs: ["Certificate of Experience from the Embassy of the Republic of Yemen", "Recommendation Letter from the Embassy of the Republic of Yemen", "Odoo ERP Workflow/Module Management (Studying)", "SAP ERP System (Studying)", "MCSA & System Admin (Self-Study)", "CCNA (Self-Study)", "Google Technical Support Professional Certificate", "FortiGate Firewall", "Sophos Firewall (Network Security)", "Linux Admin Level 1 & 2", "Red Hat Linux Admin 1 (RH124)", "Red Hat Admin 2 (RH134)", "Azure Fundamentals (AZ-900)", "Network Admin - Configuration Network"]
+        },
+        roadmap: [
+          ["fa-brands fa-linux", "Linux Administration", 78, "Users, services, filesystems, networking, security, and shell workflows."],
+          ["fa-brands fa-docker", "Docker", 68, "Containers, images, compose files, registries, and deployment basics."],
+          ["fa-solid fa-dharmachakra", "Kubernetes", 35, "Pods, services, deployments, config, and cluster fundamentals."],
+          ["fa-solid fa-code-branch", "CI/CD", 52, "GitHub workflows, build/test pipelines, releases, and deployment concepts."],
+          ["fa-solid fa-diagram-project", "Terraform", 42, "Infrastructure as Code foundations, providers, state, and reusable modules."],
+          ["fa-solid fa-cloud-arrow-up", "Cloud", 55, "Azure and AWS basics for compute, networking, identity, and storage."],
+          ["fa-solid fa-chart-line", "Monitoring", 38, "Logs, metrics, alerting concepts, dashboards, and incident signals."],
+          ["fa-solid fa-screwdriver-wrench", "Automation", 64, "PowerShell, Python, Bash, repeatable runbooks, and support workflows."]
+        ],
+        aiItems: [
+          ["Prompt engineering for clear technical outputs and structured troubleshooting."],
+          ["AI-assisted documentation, SOP drafts, knowledge base articles, and support checklists."],
+          ["Workflow automation planning for repetitive IT operations and productivity improvements."],
+          ["AI integration into technical workflows for research, script ideation, and quality checks."]
+        ],
+        contacts: [
+          ["fa-solid fa-envelope", "Email", "mailto:hossamyousry907@gmail.com"],
+          ["fa-brands fa-linkedin", "LinkedIn", "https://www.linkedin.com/in/hossam-yosri/"],
+          ["fa-brands fa-github", "GitHub", "https://github.com/hossamyosri"],
+          ["fa-brands fa-whatsapp", "WhatsApp Kuwait", "https://wa.me/96561003591"],
+          ["fa-brands fa-whatsapp", "WhatsApp Egypt", "https://wa.me/201026214384"]
+        ],
+        viewCode: "GitHub",
+        liveDemo: "Live demo",
+        notAvailable: "Demo unavailable"
+      },
+      ar: {
+        navCta: "تواصل",
+        heroEyebrow: "متاح لفرص تقنية احترافية",
+        heroTitle: "متخصص تقنية معلومات يبني بنية تحتية مستقرة وسير عمل دعم أكثر ذكاء.",
+        heroLead: "أدعم بيئات تقنية مهمة للأعمال عبر الأنظمة، الشبكات، أساسيات السحابة، الافتراضية، الأتمتة، وعمليات دعم المستخدمين، مع تركيز متزايد على DevOps والهندسة السحابية.",
+        currentRole: "IT Specialist في LC Waikiki",
+        location: "الإسكندرية، مصر | متاح للانتقال والتعاون عن بعد",
+        downloadCv: "تحميل السيرة الذاتية",
+        contactMe: "تواصل معي",
+        viewProjects: "عرض المشاريع",
+        aboutKicker: "نبذة",
+        aboutTitle: "خبرة عملية في عمليات تقنية المعلومات مع عقلية حديثة للأتمتة.",
+        aboutCopy: "يشمل عملي دعم البنية التحتية، إدارة الأنظمة، الشبكات، أساسيات السحابة، الافتراضية، استكشاف الأعطال، وتحسين الإنتاجية باستخدام الأتمتة وأدوات الذكاء الاصطناعي.",
+        aboutCardTitle: "ما أقدمه",
+        aboutCardCopy: "أركز على استقرار الأنظمة، وضوح التوثيق، سرعة حل المشكلات، وتجربة دعم هادئة ومنظمة. لدي خبرة عملية مع Microsoft 365 وWindows Server وLinux وVMware وHyper-V وDocker وFortiGate وأساسيات Azure وAWS وPowerShell وPython وOdoo ERP وعمليات الدعم التقني.",
+        toolboxTitle: "الأدوات التقنية",
+        skillsKicker: "القدرات",
+        skillsTitle: "مهارات تقنية مصنفة",
+        skillsCopy: "عرض واضح مناسب لمسؤولي التوظيف للتقنيات التي أستخدمها وأدعمها وأتعلمها في البنية التحتية وأساسيات DevOps.",
+        projectsKicker: "المشاريع",
+        projectsTitle: "معرض المشاريع",
+        projectsCopy: "بطاقات احترافية لأنظمة أعمال ولوحات تحكم ومشاريع بنية تحتية مع التقنيات والخصائص وروابط الإجراء.",
+        experienceKicker: "الخبرة",
+        experienceTitle: "المسار المهني",
+        experienceCopy: "أدوار تركز على عمليات تقنية المعلومات، إدارة الأنظمة، الدعم الفني، البنية التحتية، وحل مشكلات العملاء والمستخدمين.",
+        educationKicker: "التعليم",
+        educationTitle: "التعليم والشهادات والتكريم",
+        educationCopy: "الخلفية الأكاديمية والشهادات التقنية والأنشطة التي تدعم مساري في البنية التحتية والدعم التقني.",
+        devopsKicker: "رحلة التعلم",
+        devopsTitle: "خارطة طريق DevOps والسحابة",
+        devopsCopy: "أدرس حاليا هندسة DevOps وتقنيات السحابة من خلال معامل عملية وتوثيق وتعلم قائم على المشاريع.",
+        aiKicker: "سير عمل الذكاء الاصطناعي",
+        aiTitle: "الذكاء الاصطناعي وهندسة الأوامر",
+        aiCopy: "خبرة في استخدام أدوات الذكاء الاصطناعي، وهندسة الأوامر، وأتمتة سير العمل، وتحسين الإنتاجية باستخدام تقنيات AI.",
+        aiCardTitle: "استخدام مسؤول للذكاء الاصطناعي",
+        aiCardCopy: "أستخدم الذكاء الاصطناعي كمساعد عملي في التوثيق، تنظيم خطوات التشخيص، تخطيط السكربتات، البحث التقني، تصميم سير العمل، وإجراءات الدعم القابلة للتكرار مع الحفاظ على المراجعة البشرية والدقة التشغيلية.",
+        contactKicker: "التواصل",
+        contactTitle: "لنتحدث عن الدعم التقني أو البنية التحتية أو الأتمتة.",
+        contactCopy: "يمكنك التواصل مباشرة أو إرسال رسالة قصيرة. يقوم النموذج بالتحقق من البيانات ويفتح بريدك برسالة جاهزة للإرسال.",
+        contactDirectTitle: "قنوات مباشرة",
+        formName: "الاسم",
+        formEmail: "البريد الإلكتروني",
+        formMessage: "الرسالة",
+        formSend: "إرسال الرسالة",
+        formRequired: "يرجى إكمال جميع الحقول مع بريد إلكتروني صحيح.",
+        formReady: "البيانات صحيحة. سيتم فتح تطبيق البريد الآن.",
+        footerText: "© 2026 حسام يسري. متخصص تقنية معلومات، مدير أنظمة، ومتعلم DevOps.",
+        roles: ["IT Specialist", "System Administrator", "DevOps Engineer (Learning Path)", "Technical Support Engineer", "AI Prompt Engineer"],
+        nav: [
+          ["نبذة", "#about"],
+          ["المهارات", "#skills"],
+          ["المشاريع", "#projects"],
+          ["الخبرة", "#experience"],
+          ["التعليم", "#education"],
+          ["DevOps", "#devops"],
+          ["AI", "#ai"]
+        ],
+        badges: [
+          ["fa-solid fa-cloud", "تركيز DevOps", "أدرس حاليا هندسة DevOps وتقنيات السحابة."],
+          ["fa-solid fa-wand-magic-sparkles", "سير عمل مدعوم بالذكاء الاصطناعي", "أدوات AI وهندسة الأوامر وأتمتة سير العمل وتحسين الإنتاجية."]
+        ],
+        metrics: [
+          ["3+", "سنوات خبرة عملية في الدعم وإدارة الأنظمة"],
+          ["L1/L2", "دعم فني وحوادث وصلاحيات وأنظمة"],
+          ["M365", "إدارة مستخدمين وتعاون سحابي"],
+          ["IT Ops", "توثيق وتشخيص وجودة خدمة"]
+        ],
+        toolbox: ["Microsoft 365", "Windows Server", "Linux", "VMware", "Hyper-V", "Docker", "FortiGate", "Sophos", "Azure basics", "AWS basics", "PowerShell", "Python", "Bash", "Odoo ERP", "JIRA", "Git/GitHub"],
+        skills: [
+          ["fa-solid fa-server", "الأنظمة والخوادم", 88, ["Windows Server 2016/2019/2022", "Active Directory", "GPO, DNS, DHCP", "WSUS, WDS", "Microsoft 365"]],
+          ["fa-solid fa-shield-halved", "الأمن السيبراني", 76, ["FortiGate", "Sophos", "MFA", "Patch management", "SIEM basics", "Backup & recovery"]],
+          ["fa-solid fa-network-wired", "الشبكات", 84, ["TCP/IP", "VLANs", "LAN/WAN", "VPN", "Cisco IOS", "Wireshark"]],
+          ["fa-solid fa-cloud", "السحابة و DevOps", 66, ["AWS basics", "Azure basics", "Docker", "Terraform", "Git/GitHub", "CI/CD concepts"]],
+          ["fa-solid fa-cubes", "الافتراضية", 80, ["VMware", "Proxmox", "Hyper-V", "معامل عملية"]],
+          ["fa-solid fa-code", "البرمجة والتطوير", 64, ["Python", "PHP", "Laravel", "HTML/CSS", "JavaScript basics"]],
+          ["fa-solid fa-terminal", "السكربتات والأتمتة", 73, ["PowerShell", "Bash", "Python automation", "make.com", "n8n", "Runbooks"]],
+          ["fa-solid fa-building-circle-check", "أنظمة المؤسسات", 68, ["Odoo ERP", "SAP user support", "JIRA", "ITIL incidents", "Change management"]],
+          ["fa-solid fa-screwdriver-wrench", "الهاردوير والبنية التحتية", 82, ["Servers", "Rack mounting", "Cabling", "UPS", "CCTV", "Fingerprint systems"]],
+          ["fa-solid fa-toolbox", "الأدوات والمنصات", 78, ["Acronis", "Clonezilla", "cPanel", "DNS hosting", "AnyDesk", "TeamViewer", "iLO/iDRAC"]],
+          ["fa-solid fa-user-tie", "مهارات مهنية", 86, ["Documentation", "Excel/Word/PowerPoint", "Time management", "Problem solving", "Communication"]],
+          ["fa-solid fa-language", "اللغات", 78, ["العربية لغة أم", "الإنجليزية مهنية", "الألمانية أساسي", "الإسبانية أساسي"]],
+          ["fa-solid fa-robot", "AI وهندسة الأوامر", 74, ["Prompt design", "AI-assisted workflows", "Productivity", "Technical research"]]
+        ],
+        projects: [
+          {
+            title: "نظام إدارة العيادات",
+            icon: "fa-solid fa-house-medical",
+            className: "clinic",
+            description: "منصة متكاملة لإدارة العيادات والعمليات الطبية اليومية والتقارير.",
+            features: ["إدارة المرضى والأطباء والمواعيد", "الأشعة والمعمل والوصفات والتقارير", "صلاحيات متعددة، عربي/إنجليزي، ووضع داكن/فاتح"],
+            stack: ["React", "Supabase", "PostgreSQL", "Tailwind"],
+            repo: "https://github.com/hossamyosri",
+            demo: null
+          },
+          {
+            title: "نظام POS وإدارة المخزون",
+            icon: "fa-solid fa-cash-register",
+            className: "pos",
+            description: "نظام نقاط بيع ذكي للمتاجر والسوبر ماركت ومحلات الكهرباء والسباكة والفروع.",
+            features: ["المبيعات والمخزون والباركود والفواتير والعملاء", "دعم الفروع والصلاحيات والتقارير", "دعم العلامة البيضاء والوضع الداكن/الفاتح"],
+            stack: ["React", "Supabase", "PostgreSQL"],
+            repo: "https://github.com/hossamyosri",
+            demo: null
+          },
+          {
+            title: "نظام إدارة صالات PlayStation",
+            icon: "fa-solid fa-gamepad",
+            className: "gaming",
+            description: "لوحة إدارة لصالات البلايستيشن ومراكز الألعاب مع متابعة تشغيلية لحظية.",
+            features: ["إدارة الأجهزة والجلسات والمؤقت", "الطلبات والوجبات والصلاحيات والفروع وسجلات التدقيق", "دعم العربية ولوحة تحكم متجاوبة"],
+            stack: ["React", "Supabase", "PostgreSQL"],
+            repo: "https://github.com/hossamyosri",
+            demo: null
+          },
+          {
+            title: "أدوات أتمتة الدعم التقني",
+            icon: "fa-solid fa-terminal",
+            className: "clinic",
+            description: "مجموعة أدوات سطر أوامر لتسريع مهام الدعم التقني اليومية والتشخيص المتكرر.",
+            features: ["أدوات Windows Batch لمهام الدعم", "فحوصات أسرع للمشكلات المتكررة", "سكربتات قابلة لإعادة الاستخدام لتحسين إنتاجية الفني"],
+            stack: ["Batch", "PowerShell concepts", "Windows"],
+            repo: "https://github.com/hossamyosri/Scripts",
+            demo: null
+          },
+          {
+            title: "معمل أمن الشبكات",
+            icon: "fa-solid fa-shield-halved",
+            className: "pos",
+            description: "معمل عملي للجدران النارية وVPN لمحاكاة ضوابط شبكة مؤسسية آمنة.",
+            features: ["إعداد FortiGate وSophos", "VPN tunnels وACLs وسياسات التحكم في الوصول", "اختبارات أمنية وسيناريوهات شبكة موثقة"],
+            stack: ["FortiGate", "Sophos", "VPN", "ACL"],
+            repo: "https://github.com/hossamyosri/Sophos",
+            demo: null
+          },
+          {
+            title: "تحليل حركة الشبكة",
+            icon: "fa-solid fa-magnifying-glass-chart",
+            className: "gaming",
+            description: "تدريب على التقاط وتحليل الترافيك لتشخيص مشاكل الاتصال والأداء.",
+            features: ["Packet capture باستخدام Wireshark", "تحليل البروتوكولات ومسارات الترافيك", "أنماط تشخيص لمشكلات الشبكات"],
+            stack: ["Wireshark", "TCP/IP", "Networking"],
+            repo: "https://github.com/hossamyosri/Network-Sniffing",
+            demo: null
+          },
+          {
+            title: "تصميم وتنفيذ الشبكات",
+            icon: "fa-solid fa-sitemap",
+            className: "clinic",
+            description: "تدريب على تصميم الشبكات يشمل VLANs ومفاهيم routing وقواعد firewall.",
+            features: ["تصميم topology على Cisco Packet Tracer", "سيناريوهات VLAN وrouting", "مفاهيم التقسيم وقواعد الجدار الناري"],
+            stack: ["Cisco", "VLANs", "Routing", "Packet Tracer"],
+            repo: "https://github.com/hossamyosri/Network",
+            demo: null
+          },
+          {
+            title: "موقع تعريفي لشركة",
+            icon: "fa-solid fa-globe",
+            className: "pos",
+            description: "موقع بسيط ونظيف لعرض خدمات شركة ومعلوماتها.",
+            features: ["موقع static متجاوب", "هيكل محتوى يركز على الخدمات", "تنفيذ front-end بسيط"],
+            stack: ["HTML", "CSS"],
+            repo: "https://github.com/hossamyosri",
+            demo: "https://hossamyosri.github.io/Project/pro2.html"
+          }
+        ],
+        experience: [
+          {
+            title: "IT Specialist | LC Waikiki",
+            meta: "01/2026 - حتى الآن | الإسكندرية، مصر",
+            company: "LC Waikiki | برج العرب، الإسكندرية، مصر",
+            bullets: ["تقديم دعم L1/L2 للمستخدمين في مشاكل الهاردوير والسوفتوير والشبكات.", "إدارة أنظمة Windows وحسابات المستخدمين والصلاحيات والتشغيل اليومي الآمن.", "دعم خدمات Microsoft 365 مثل Outlook وTeams وOneDrive وSharePoint.", "تشخيص LAN/WAN وWi-Fi والطابعات والماسحات وأنظمة POS في بيئة retail.", "تركيب وإعداد وصيانة أجهزة العمل واللابتوبات ومعدات IT الخاصة بالفروع.", "متابعة طلبات الخدمة والحوادث، الأصول، الموردين، النسخ الاحتياطي، الأمن، والالتزام بسياسات IT."]
+          },
+          {
+            title: "System Administrator | Yemen Embassy",
+            meta: "07/2024 - 11/2025 | الجيزة، مصر",
+            company: "سفارة الجمهورية اليمنية | الجيزة، مصر",
+            bullets: ["إدارة Microsoft 365 وActive Directory وDNS/DHCP وGroup Policies ونظام التذاكر.", "إعداد وإدارة Sophos وFortiGate وVPN وضوابط الأمان.", "تصميم وصيانة LAN وstructured cabling وrouting وswitching وسياسات الوصول.", "الإشراف على Windows Server 2022 وخدمات domain وWSUS وWDS.", "توثيق IT General Controls مثل صلاحيات المستخدمين وسياسات كلمات المرور والنسخ الاحتياطي والتدقيق الداخلي.", "دعم المستخدمين ميدانيا وعن بعد، أساسيات SIEM، تقييمات أمنية، وخطط disaster recovery."]
+          },
+          {
+            title: "IT Technical Support Specialist | Business Code",
+            meta: "07/2024 - 11/2024 | القاهرة، مصر",
+            company: "Business Code | القاهرة، مصر",
+            bullets: ["تركيب وإعداد Cisco switches/routers وVLANs وكابلات Ethernet.", "تقديم دعم L2 لمشاكل الشبكات والاتصال وإعدادات الجدران النارية.", "إدارة cPanel وDNS records وخدمات domain hosting.", "إدارة التوثيق والمخزون وchange logs وتركيب rack servers وUPS وتنظيم الكابلات.", "تنفيذ firmware/BIOS updates وimaging لأنظمة Windows/Linux باستخدام Acronis وClonezilla وحماية endpoints.", "استخدام Wireshark لتحليل الترافيك ودعم تقييم الثغرات وتطبيق التحديثات الأمنية."]
+          },
+          {
+            title: "Freelance IT Specialist",
+            meta: "09/2021 - 12/2023",
+            company: "دعم حر عن بعد وميداني",
+            bullets: ["تقديم دعم تقني عن بعد باستخدام أنظمة تذاكر وأدوات remote desktop لعملاء متنوعين.", "إدارة onboarding/offboarding والصلاحيات وتجهيز الأجهزة وتشخيص مشاكل الهاردوير والسوفتوير.", "إنشاء مقالات knowledge base وأدلة مستخدمين وتوثيق تشغيلي أساسي.", "إدارة إعدادات شبكة أساسية وتحديثات أمنية وتحسين الاعتمادية للشركات الصغيرة.", "تنفيذ تدقيقات أمنية صغيرة وتطوير سكربتات PowerShell لأتمتة مهام الدعم المتكررة."]
+          }
+        ],
+        education: {
+          academicTitle: "الخلفية الأكاديمية",
+          degree: "بكالوريوس تكنولوجيا المعلومات",
+          degreeMeta: "09/2020 - 06/2024 | جامعة مطروح | مرسى مطروح، مصر",
+          military: "الموقف العسكري: إعفاء",
+          awardsTitle: "الجوائز والتقدير",
+          awards: ["التميز في مشاريع الشبكات - جامعة مطروح، 2023/2024", "معهد إعداد القادة في حلوان", "أمين اللجنة الثقافية العليا (2022/2023 + 2023/2024)"],
+          certsTitle: "الشهادات الرئيسية",
+          certs: ["شهادة خبرة من سفارة الجمهورية اليمنية", "خطاب توصية من سفارة الجمهورية اليمنية", "Odoo ERP Workflow/Module Management (قيد الدراسة)", "SAP ERP System (قيد الدراسة)", "MCSA & System Admin (دراسة ذاتية)", "CCNA (دراسة ذاتية)", "Google Technical Support Professional Certificate", "FortiGate Firewall", "Sophos Firewall (Network Security)", "Linux Admin Level 1 & 2", "Red Hat Linux Admin 1 (RH124)", "Red Hat Admin 2 (RH134)", "Azure Fundamentals (AZ-900)", "Network Admin - Configuration Network"]
+        },
+        roadmap: [
+          ["fa-brands fa-linux", "إدارة Linux", 78, "المستخدمون والخدمات وأنظمة الملفات والشبكات والأمان وسطر الأوامر."],
+          ["fa-brands fa-docker", "Docker", 68, "الحاويات والصور وCompose والسجلات وأساسيات النشر."],
+          ["fa-solid fa-dharmachakra", "Kubernetes", 35, "Pods والخدمات وDeployments والإعدادات وأساسيات العناقيد."],
+          ["fa-solid fa-code-branch", "CI/CD", 52, "GitHub workflows وخطوط البناء والاختبار والإصدارات ومفاهيم النشر."],
+          ["fa-solid fa-diagram-project", "Terraform", 42, "أساسيات Infrastructure as Code والمزودين والحالة والوحدات القابلة لإعادة الاستخدام."],
+          ["fa-solid fa-cloud-arrow-up", "Cloud", 55, "أساسيات Azure وAWS للحوسبة والشبكات والهوية والتخزين."],
+          ["fa-solid fa-chart-line", "Monitoring", 38, "السجلات والمقاييس والتنبيهات واللوحات وإشارات الحوادث."],
+          ["fa-solid fa-screwdriver-wrench", "Automation", 64, "PowerShell وPython وBash وRunbooks وسير عمل الدعم."]
+        ],
+        aiItems: [
+          ["هندسة أوامر للحصول على مخرجات تقنية واضحة وتشخيص منظم."],
+          ["توثيق مدعوم بالذكاء الاصطناعي، ومسودات إجراءات، ومقالات معرفة، وقوائم دعم."],
+          ["تخطيط أتمتة سير العمل للمهام المتكررة وتحسين الإنتاجية."],
+          ["دمج AI في البحث التقني وأفكار السكربتات وفحوصات الجودة."]
+        ],
+        contacts: [
+          ["fa-solid fa-envelope", "البريد الإلكتروني", "mailto:hossamyousry907@gmail.com"],
+          ["fa-brands fa-linkedin", "LinkedIn", "https://www.linkedin.com/in/hossam-yosri/"],
+          ["fa-brands fa-github", "GitHub", "https://github.com/hossamyosri"],
+          ["fa-brands fa-whatsapp", "WhatsApp الكويت", "https://wa.me/96561003591"],
+          ["fa-brands fa-whatsapp", "WhatsApp مصر", "https://wa.me/201026214384"]
+        ],
+        viewCode: "GitHub",
+        liveDemo: "تجربة مباشرة",
+        notAvailable: "الديمو غير متاح"
+      }
+    };
+
+    const state = {
+      lang: localStorage.getItem("portfolio-lang") || "en",
+      theme: localStorage.getItem("portfolio-theme") || "light",
+      roleIndex: 0,
+      charIndex: 0,
+      deleting: false,
+      typingTimer: null
+    };
+
+    const $ = (selector) => document.querySelector(selector);
+
+    function t() {
+      return content[state.lang];
+    }
+
+    function setTheme(theme) {
+      state.theme = theme;
+      document.body.dataset.theme = theme;
+      localStorage.setItem("portfolio-theme", theme);
+      $("#theme-toggle i").className = theme === "dark" ? "fa-solid fa-sun" : "fa-solid fa-moon";
+    }
+
+    function renderStaticText() {
+      document.documentElement.lang = state.lang;
+      document.documentElement.dir = state.lang === "ar" ? "rtl" : "ltr";
+      document.body.dir = document.documentElement.dir;
+      document.querySelectorAll("[data-i18n]").forEach((node) => {
+        const key = node.dataset.i18n;
+        if (t()[key]) node.textContent = t()[key];
+      });
+      $("#lang-toggle").textContent = state.lang === "en" ? "AR" : "EN";
+      $("#lang-toggle").setAttribute("aria-label", state.lang === "en" ? "Switch to Arabic" : "Switch to English");
+    }
+
+    function renderNav() {
+      $("#nav-links").innerHTML = t().nav.map(([label, href]) => `<a href="${href}">${label}</a>`).join("");
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        link.addEventListener("click", () => $("#nav-links").classList.remove("open"));
+      });
+    }
+
+    function renderHeroBadges() {
+      $("#hero-badges").innerHTML = t().badges.map(([icon, title, copy]) => `
+        <div class="info-badge reveal">
+          <strong><i class="${icon}"></i>${title}</strong>
+          <span>${copy}</span>
+        </div>
+      `).join("");
+    }
+
+    function renderAbout() {
+      $("#metrics").innerHTML = t().metrics.map(([value, label]) => `
+        <div class="metric">
+          <strong>${value}</strong>
+          <span>${label}</span>
+        </div>
+      `).join("");
+
+      $("#toolbox").innerHTML = t().toolbox.map((item) => `
+        <span class="chip"><i class="fa-solid fa-check"></i>${item}</span>
+      `).join("");
+    }
+
+    function renderSkills() {
+      $("#skills-grid").innerHTML = t().skills.map(([icon, title, value, items]) => `
+        <article class="skill-card reveal">
+          <div class="skill-title"><i class="${icon}"></i><span>${title}</span></div>
+          <div class="skill-list">${items.map((item) => `<span class="skill-pill">${item}</span>`).join("")}</div>
+          <div class="progress" aria-label="${title} progress ${value}%"><span style="--value: ${value}%"></span></div>
+        </article>
+      `).join("");
+    }
+
+    function renderProjects() {
+      $("#project-grid").innerHTML = t().projects.map((project) => `
+        <article class="project-card reveal">
+          <div class="project-visual ${project.className}">
+            <i class="${project.icon}"></i>
+            <span>${project.title}</span>
+          </div>
+          <div class="project-body">
+            <h3>${project.title}</h3>
+            <p>${project.description}</p>
+            <ul class="feature-list">
+              ${project.features.map((feature) => `<li><i class="fa-solid fa-check"></i><span>${feature}</span></li>`).join("")}
+            </ul>
+            <div class="stack">${project.stack.map((tech) => `<span>${tech}</span>`).join("")}</div>
+            <div class="project-actions">
+              <a class="btn secondary" href="${project.repo}" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i>${t().viewCode}</a>
+              ${project.demo ? `<a class="btn ghost" href="${project.demo}" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i>${t().liveDemo}</a>` : `<span class="btn ghost disabled" aria-disabled="true"><i class="fa-solid fa-eye-slash"></i>${t().notAvailable}</span>`}
+            </div>
+          </div>
+        </article>
+      `).join("");
+    }
+
+    function renderTimeline() {
+      $("#timeline").innerHTML = t().experience.map((item) => `
+        <article class="timeline-item reveal">
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <div class="timeline-meta">${item.meta}</div>
+          <h3>${item.title}</h3>
+          <p><strong>${item.company}</strong></p>
+          <ul class="timeline-list">
+            ${item.bullets.map((bullet) => `<li><i class="fa-solid fa-check"></i><span>${bullet}</span></li>`).join("")}
+          </ul>
+        </article>
+      `).join("");
+    }
+
+    function renderEducation() {
+      const education = t().education;
+      $("#education-grid").innerHTML = `
+        <article class="glass-card reveal">
+          <h3><i class="fa-solid fa-university"></i> ${education.academicTitle}</h3>
+          <p><strong>${education.degree}</strong></p>
+          <p>${education.degreeMeta}</p>
+          <p><strong>${education.military}</strong></p>
+          <h3><i class="fa-solid fa-medal"></i> ${education.awardsTitle}</h3>
+          <ul class="timeline-list">
+            ${education.awards.map((award) => `<li><i class="fa-solid fa-check"></i><span>${award}</span></li>`).join("")}
+          </ul>
+        </article>
+        <article class="glass-card reveal">
+          <h3><i class="fa-solid fa-certificate"></i> ${education.certsTitle}</h3>
+          <div class="cert-grid">
+            ${education.certs.map((cert) => `<div class="cert-item"><i class="fa-solid fa-award"></i><span>${cert}</span></div>`).join("")}
+          </div>
+        </article>
+      `;
+    }
+
+    function renderRoadmap() {
+      $("#roadmap").innerHTML = t().roadmap.map(([icon, title, value, copy]) => `
+        <article class="roadmap-card reveal">
+          <i class="${icon}"></i>
+          <h3>${title}</h3>
+          <p>${copy}</p>
+          <div class="progress" aria-label="${title} progress ${value}%"><span style="--value: ${value}%"></span></div>
+        </article>
+      `).join("");
+    }
+
+    function renderAi() {
+      $("#ai-list").innerHTML = t().aiItems.map(([copy]) => `
+        <li class="reveal"><i class="fa-solid fa-wand-magic-sparkles"></i><span>${copy}</span></li>
+      `).join("");
+    }
+
+    function renderContacts() {
+      $("#contact-list").innerHTML = t().contacts.map(([icon, label, href]) => `
+        <a class="contact-link" href="${href}" target="${href.startsWith("http") ? "_blank" : "_self"}" rel="noopener">
+          <i class="${icon}"></i>
+          <span>${label}</span>
+        </a>
+      `).join("");
+    }
+
+    function initReveal() {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      document.querySelectorAll(".reveal").forEach((node) => observer.observe(node));
+    }
+
+    function typeRole() {
+      const roles = t().roles;
+      const current = roles[state.roleIndex % roles.length];
+      state.charIndex += state.deleting ? -1 : 1;
+      $("#typing-role").textContent = current.slice(0, state.charIndex);
+
+      if (!state.deleting && state.charIndex === current.length) {
+        state.deleting = true;
+        state.typingTimer = setTimeout(typeRole, 1200);
+        return;
+      }
+
+      if (state.deleting && state.charIndex === 0) {
+        state.deleting = false;
+        state.roleIndex += 1;
+      }
+
+      state.typingTimer = setTimeout(typeRole, state.deleting ? 45 : 82);
+    }
+
+    function resetTyping() {
+      clearTimeout(state.typingTimer);
+      state.roleIndex = 0;
+      state.charIndex = 0;
+      state.deleting = false;
+      typeRole();
+    }
+
+    function renderAll() {
+      renderStaticText();
+      renderNav();
+      renderHeroBadges();
+      renderAbout();
+      renderSkills();
+      renderProjects();
+      renderTimeline();
+      renderEducation();
+      renderRoadmap();
+      renderAi();
+      renderContacts();
+      initReveal();
+      resetTyping();
+    }
+
+    function initForm() {
+      $("#contact-form").addEventListener("submit", (event) => {
+        event.preventDefault();
+        const name = $("#name").value.trim();
+        const email = $("#email").value.trim();
+        const message = $("#message").value.trim();
+        const status = $("#form-message");
+        const validEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+        if (!name || !validEmail || !message) {
+          status.className = "form-message";
+          status.textContent = t().formRequired;
+          return;
+        }
+
+        status.className = "form-message success";
+        status.textContent = t().formReady;
+        const subject = encodeURIComponent(`Portfolio contact from ${name}`);
+        const body = encodeURIComponent(`${message}\n\nFrom: ${name}\nEmail: ${email}`);
+        window.location.href = `mailto:${profile.email}?subject=${subject}&body=${body}`;
+      });
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      setTheme(state.theme);
+      renderAll();
+      initForm();
+
+      $("#theme-toggle").addEventListener("click", () => {
+        setTheme(state.theme === "dark" ? "light" : "dark");
+      });
+
+      $("#lang-toggle").addEventListener("click", () => {
+        state.lang = state.lang === "en" ? "ar" : "en";
+        localStorage.setItem("portfolio-lang", state.lang);
+        renderAll();
+      });
+
+      $("#menu-toggle").addEventListener("click", () => {
+        $("#nav-links").classList.toggle("open");
+      });
+    });
+  </script>
+</body>
+</html>
